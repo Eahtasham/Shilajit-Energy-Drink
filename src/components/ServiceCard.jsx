@@ -1,8 +1,15 @@
 import React from 'react'
+import {motion} from "framer-motion"
+import { fadeIn } from "../variants";
 
 function ServiceCard({imgURL,label,subtext}) {
   return (
-    <div className="flex-1 sm:w-[350px]
+    <motion.div 
+    variants={fadeIn("up",0.1)}
+    initial="hidden"
+    whileInView={"show"}
+    viewport={{once: false, amount: 0.5}}
+    className="flex-1 sm:w-[350px]
     sm:min-w-[350px] w-full
     rounded-[20px] shadow-3xl
     px-10 py-16">
@@ -16,7 +23,7 @@ function ServiceCard({imgURL,label,subtext}) {
         <h3 className="mt-5 font-palanquin
         text-3xl leading-normal font-bold">{label}</h3>
         <p className="mt-3 break-words info-text">{subtext}</p>
-    </div>
+    </motion.div>
   )
 }
 

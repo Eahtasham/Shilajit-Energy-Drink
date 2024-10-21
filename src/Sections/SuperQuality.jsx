@@ -12,23 +12,22 @@ function SuperQuality() {
                 text-4xl capitalize font-bold">
                   We Provide You
                     <span
-                    className=" text-coral-red "> Super
+                    className=" text-coral-red "> Premiusm
                     </span>
                     <br/>
                     <span
                     className=" text-coral-red "> Quality </span>
-                   Shoes
+                  Energy Drink
                 </h2>
                 <p className="mt-4 lg:max-w-lg info-text">
-                Ensuring premium comfort and style, our meticulously crafted footwear is designed to elevate your experience, providing you with 
-                unmatched quality, innovation, and a touch of elegance.
+                Our energy drink, crafted with care, delivers exceptional vitality and wellness. 
+                Packed with quality ingredients like Shilajit, Saffron, and Zam Zam Water, it ensures unmatched energy.
                 </p>
                 <p className="mt-6 lg:max-w-lg info-text">
-                Our dedication to detail and 
-                excellence ensures your satisfaction
+                Our commitment to excellence guarantees your satisfaction.
                 </p>
                 <div className="mt-8">
-                <Button label="Shop Now" />
+                <Button label="Buy Now" />
                 </div>
       </div>
       <div className="flex flex-1 items-stretch 
@@ -38,7 +37,7 @@ function SuperQuality() {
             alt="Shoe8"
             width={570}
             height={522}
-            className="object-contain"
+            className="object-contain rounded-xl"
         />
       </div>
 

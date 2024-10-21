@@ -1,6 +1,7 @@
 import { products } from "../constants"
 import PopularProductCard from "../components/PopularProductCard"
-
+import {motion} from "framer-motion"
+import { fadeIn } from "../variants";
 
 function PopularProduct() {
     return (
@@ -14,11 +15,15 @@ function PopularProduct() {
                     Products
                 </h2>
                 <p className="lg:max-w-lg mt-2
-            font-montserrat text-slate-gray">Experience top notch what a good
-                    ttile is here we are going to write someting else
+            font-montserrat text-slate-gray">Experience the Ultimate Energy Boost. Discover the flavors that fuel your day!
                 </p>
             </div>
-            <div className="mt-16 grid lg:grid-cols-4 
+            <motion.div 
+            variants={fadeIn("up",0.1)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{once: false, amount: 0.5}}
+            className="mt-16 grid lg:grid-cols-4 
             md:grid-cols-4 sm:grid-cols-2 grid-cols-1
             sm:gap-6 gap-14">
                 {
@@ -29,7 +34,7 @@ function PopularProduct() {
                     ))
                 }
 
-            </div>
+            </motion.div>
         </section>
     )
 }

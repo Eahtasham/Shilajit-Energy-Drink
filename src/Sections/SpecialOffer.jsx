@@ -7,10 +7,10 @@ function SpecialOffer() {
     <section className="flex justify-wrap
     item-center max-xl:flex-col-reverse
     gap-10 max-container">
-        <div className="flex-1">
+        <div className="flex-1 scroll-smooth focus:scroll-auto">
           <img src={offer} alt="special offer"
             width={773} height={687}
-            className="object-contain w-full"
+            className="object-contain w-full rounded-xl"
             />
         </div>
         <div className="flex flex-1 flex-col">
@@ -21,12 +21,11 @@ function SpecialOffer() {
                      Offer
                 </h2>
                 <p className="mt-4 lg:max-w-lg info-text">
-                Embark on a shopping journey that redefines your experience with unbeatable deals. From premier selections to incredible savings, 
+                Embark on a drinking journey that redefines your experience with unbeatable deals. From premier selections to incredible savings, 
                 we offer unparalleled value that sets us apart.
                 </p>
                 <p className="mt-6 lg:max-w-lg info-text">
-                Our dedication to detail and 
-                excellence ensures your satisfaction
+                Experience unbeatable deals on the best energy drinks in the market!
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
                 <Button label="Shop Now" iconURL={arrowRight}/>

@@ -5,7 +5,8 @@ import { shoes,statistics } from "../constants";
 import ShoeCard from "../components/ShoeCard";
 import { bigShoe1, bigShoe2, bigShoe3 } from "../assets/images";
 import { useState } from "react";
-
+import {motion} from "framer-motion"
+import { fadeIn } from "../variants";
 
 function Hero() {
     const [bigShoeImg,setBigShoeImg]=useState(bigShoe2)
@@ -20,33 +21,53 @@ function Hero() {
             justify-center items-start w-full max-xl:padding-x 
             pt-28">
                 <p className="text-xl font-montserrat 
-                text-coral-red">Our Summer Collection</p>
+                text-coral-red">Meet Our Product</p>
 
                 <h1 className="mt-10 font-palanquin 
                 text-8xl
                 max-sm:text-[72px] max-sm:leading-[82px] 
                 font-bold">
                     <span className="xl:bg-white xl:whitespace-nowrap relative
-                    z-10 pr-10">The new Arrival</span>
+                    z-10 pr-10">Enhances Strength!</span>
                     <br />
-                    <span
+                    <motion.span
+                    variants={fadeIn("down",0.1)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{once: false, amount: 0.7}}
                     className=" text-coral-red 
-                    inline-block mt-3">Nike
-                    </span> Shoes
-                      
+                    inline-block mt-3">Shilajit
+                    </motion.span>
+                    <br />
+                    <motion.span
+                    variants={fadeIn("up",0.1)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{once: false, amount: 0.7}}
+                    className=" text-coral-red 
+                    inline-block mt-3">Energy Drink
+                    </motion.span>
+                    
                 </h1>
-                <p className="font-montserrat text-slate-gray
-                text-lg leading-8 mt-6 mb-14 sm:max-w-sm">Some Random Text Some Random Text Some Random Text</p>
-                <Button label="Shop Now" iconURL={arrowRight} />
+                <p 
+                className="font-montserrat text-slate-gray
+                text-lg leading-8 mt-6 mb-14 sm:max-w-sm"> 
+                Boost stamina, enhance vitality, and recharge naturally with every sip!</p>
+                <Button label="Buy Now" iconURL={arrowRight} />
 
                 <div className="flex justify-start 
                 items-start flex-wrap
                 w-full mt-20 gap-16">
                     {statistics.map((stat,index) => (
-                        <div key={index}>
+                        <motion.div key={index}
+                        variants={fadeIn("up",0.15)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{once: false, amount: 0.7}}
+                        >
                             <p className="text-4xl font-bold font-palanquin">{stat.value}</p>
                             <p className="font-montserrat text-slate-gray leading-7">{stat.label}</p>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>

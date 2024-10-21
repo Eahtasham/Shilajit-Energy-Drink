@@ -1,8 +1,15 @@
 import {headerLogo} from '../assets/images'
 import {hamburger} from '../assets/icons'
 import { navLinks } from '../constants'
+import { useState } from 'react'
 
 function Nav() {
+    const [isOpen,setIsOpen]=useState(false);
+
+    function toggleNavbar(){
+        setIsOpen(!isOpen);
+    }
+
   return (
     <header className="padding-x py-8 
     absolute z-10 w-full">
@@ -23,7 +30,7 @@ function Nav() {
                             href={item.href}
                             className="font-montserrat
                             leading-normal text-lg
-                            text-slate-gray" 
+                            text-slate-gray hover:text-coral-red" 
                         >
                             {item.label}
                         </a>
@@ -31,7 +38,7 @@ function Nav() {
                 ))}
 
             </ul>
-            <div>
+            <div onClick={toggleNavbar}>
                 <img 
                     src={hamburger}
                     alt="hamburger"
@@ -41,6 +48,24 @@ function Nav() {
                 />
             </div>
         </nav>
+        {
+            isOpen && (
+                <div className="flex flex-col items-center justify-center
+                basis-full flex-wrap cursor-pointer">
+                    {navLinks.map((item)=>(
+                        <a
+                        href={item.href}
+                        className="font-montserrat hidden max-lg:flex items-center justify-center bg-white w-full
+                        leading-normal text-lg z-20 
+                        text-slate-gray hover:text-coral-red"
+                        >
+                            {item.label}
+                        </a>
+                    ))}
+                </div>
+            )
+        }
+
     </header>
   )
 }

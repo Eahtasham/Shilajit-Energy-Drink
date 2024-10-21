@@ -1,10 +1,10 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
-import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
+import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, customer3, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
 
 export const navLinks = [
     { href: "#home", label: "Home" },
-    { href: "#about-us", label: "About Us" },
     { href: "#products", label: "Products" },
+    { href: "#about-us", label: "About Us" },
     { href: "#contact-us", label: "Contact Us" },
 ];
 
@@ -24,76 +24,64 @@ export const shoes = [
 ];
 
 export const statistics = [
-    { value: '1k+', label: 'Brands' },
-    { value: '500+', label: 'Shops' },
-    { value: '250k+', label: 'Customers' },
+    { value: '500+', label: 'Retailers' },
+    { value: '50+', label: 'Shops' },
+    { value: '25k+', label: 'Happy Customers' },
 ];
 
 export const products = [
     {
         imgURL: shoe4,
-        name: "Nike Air Jordan-01",
-        price: "$200.20",
+        name: "Mango",
+        price: "$45.00",
     },
     {
         imgURL: shoe5,
-        name: "Nike Air Jordan-10",
-        price: "$210.20",
+        name: "Orange Peach",
+        price: "$45.00",
     },
     {
         imgURL: shoe6,
-        name: "Nike Air Jordan-100",
-        price: "$220.20",
+        name: "Strawberry (Coming Soon)",
+        price: "$0.00",
     },
     {
         imgURL: shoe7,
-        name: "Nike Air Jordan-001",
-        price: "$230.20",
+        name: "Mixed Berry (Coming Soon)",
+        price: "$0.00",
     },
 ];
 
 export const services = [
     {
         imgURL: truckFast,
-        label: "Free shipping",
+        label: "Fast shipping",
         subtext: "Enjoy seamless shopping with our complimentary shipping service."
     },
     {
         imgURL: shieldTick,
-        label: "Secure Payment",
-        subtext: "Experience worry-free transactions with our secure payment options."
+        label: "Quality Ingredients",
+        subtext: "Saffron, Shilajit, and Zam Zam water for a pure, potent boost."
     },
     {
         imgURL: support,
-        label: "Love to help you",
-        subtext: "Our dedicated team is here to assist you every step of the way."
+        label: "Loving Taste",
+        subtext: "Delicious flavors that refresh and energize."
     },
 ];
 
 export const reviews = [
     {
         imgURL: customer1,
-        customerName: 'Morich Brown',
+        customerName: 'Hamza Rehman',
         rating: 4.5,
-        feedback: "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!"
+        feedback: "The quality and energy boost exceeded my expectations! Absolutely refreshing."
     },
     {
         imgURL: customer2,
-        customerName: 'Lota Mongeskar',
+        customerName: 'Juli Jones',
         rating: 4.5,
-        feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
-    },
-    {
-        imgURL: customer1,
-        customerName: 'Lota Mongeskarii',
-        rating: 4.5,
-        feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
-    },
-    {
-        imgURL: customer2,
-        customerName: 'Morich Brownii',
-        rating: 4.5,
-        feedback: "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!"
+        feedback: "I felt energized throughout the day. I’ll definitely come back for more!"
     }
 ];
 
@@ -102,12 +90,10 @@ export const footerLinks = [
     {
         title: "Products",
         links: [
-            { name: "Air Force 1", link: "/" },
-            { name: "Air Max 1", link: "/" },
-            { name: "Air Jordan 1", link: "/" },
-            { name: "Air Force 2", link: "/" },
-            { name: "Nike Waffle Racer", link: "/" },
-            { name: "Nike Cortez", link: "/" },
+            { name: "Mango", link: "/" },
+            { name: "Orange Peach", link: "/" },
+            { name: "Strawberry", link: "/" },
+            { name: "Mixed Berry", link: "/" },
         ],
     },
     {
@@ -115,7 +101,6 @@ export const footerLinks = [
         links: [
             { name: "About us", link: "/" },
             { name: "FAQs", link: "/" },
-            { name: "How it works", link: "/" },
             { name: "Privacy policy", link: "/" },
             { name: "Payment policy", link: "/" },
         ],
@@ -123,8 +108,8 @@ export const footerLinks = [
     {
         title: "Get in touch",
         links: [
-            { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-            { name: "+92554862354", link: "tel:+92554862354" },
+            { name: "Eahtashamummam@gmail.com", link: "eahtashamummam@gmail.com" },
+            { name: "+91 55486 23545", link: "tel:+915548623545" },
         ],
     },
 ];

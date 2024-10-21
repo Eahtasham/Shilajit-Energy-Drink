@@ -6,9 +6,9 @@ function Button({label,iconURL,backgroundColor,textColor,borderColor,fullWidth})
     className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none
     ${
       backgroundColor
-        ? `${backgroundColor} ${textColor} ${borderColor}`
-        : "bg-coral-red text-white border-coral-red"
-    } rounded-full ${fullWidth && "w-full"}`}
+        ? `${backgroundColor} ${textColor} ${borderColor} transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gray-100 duration-300`
+        : "bg-coral-red text-white border-coral-red" 
+    } rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-light-red duration-300 ${fullWidth && "w-full"}`}
   >
         {label}        
         {iconURL &&<img 
