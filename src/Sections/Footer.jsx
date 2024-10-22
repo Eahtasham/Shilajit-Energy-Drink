@@ -18,8 +18,7 @@ function Footer() {
             </a>
             <p className="mt-6 text-base leading-7 font-montserrat
             text-white-400 sm:max-w-sm">
-              Get shoes ready for the new term at your Nike Store.
-              Find Your perfect Size In Store. Get Rewards.
+              Elevate your energy with Shilajit. Perform better, feel stronger. Get Rewards!
             </p>
             <div className="flex items-center gap-5 mt-8">
               {
