@@ -28,7 +28,7 @@ function Hero() {
                 max-sm:text-[72px] max-sm:leading-[82px] 
                 font-bold">
                     <span className="xl:bg-white xl:whitespace-nowrap relative
-                    z-10 pr-10">The New Arrival!</span>
+                    z-10 pr-10">The Best Boost!</span>
                     <br />
                     <motion.span
                     variants={fadeIn("down",0.1)}
@@ -40,7 +40,7 @@ function Hero() {
                     </motion.span>
                     <br />
                     <motion.span
-                    variants={fadeIn("up",0.1)}
+                    variants={fadeIn("down",0.1)}
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{once: false, amount: 0.7}}

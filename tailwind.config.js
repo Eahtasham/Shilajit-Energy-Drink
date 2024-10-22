@@ -23,7 +23,7 @@ export default {
       },
       colors: {
         'primary': "#F5F6FF",
-        "coral-red": "#ff0c0c", 
+        "coral-red": "#ff004b", 
         "slate-gray": "#6D6D6D",
         "pale-blue": "#F5F6FF",
         "white-400": "rgba(255, 255, 255, 0.80)",

@@ -28,9 +28,9 @@ function SpecialOffer() {
                 Experience unbeatable deals on the best energy drinks in the market!
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
-                <Button label="Shop Now" iconURL={arrowRight}/>
+                <Button label="Buy Now" iconURL={arrowRight}/>
                 <Button
-                    label='Learn more'
+                    label='Buy on Amazon'
                     backgroundColor='bg-white'
                     borderColor='border-slate-gray'
                     textColor='text-slate-gray'

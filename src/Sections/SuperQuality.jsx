@@ -12,7 +12,7 @@ function SuperQuality() {
                 text-4xl capitalize font-bold">
                   We Provide You
                     <span
-                    className=" text-coral-red "> Premiusm
+                    className=" text-coral-red "> Premium
                     </span>
                     <br/>
                     <span
